@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" style="font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif">
+  <defs>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8A8A8A"/>
+    </marker>
+    <marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C1654A"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="#F5F0EB"/>
+
+  <!-- 头部 -->
+  <text x="64" y="50" font-size="15" font-weight="bold" fill="#C1654A" letter-spacing="3">PRODUCT 02 · DEMO → PRODUCT</text>
+  <text x="64" y="98" font-size="38" font-weight="bold" fill="#2D2D2D">玩点真的</text>
+  <text x="64" y="128" font-size="16" fill="#4A4A4A">拍下现场，当场生成一局能开玩的线下游戏，AI 全程主持</text>
+  <rect x="878" y="66" width="150" height="34" rx="17" fill="#C1654A"/>
+  <text x="953" y="88" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">已上线可玩</text>
+  <rect x="1042" y="66" width="174" height="34" rx="17" fill="#E8D5CE"/>
+  <text x="1129" y="88" font-size="14" font-weight="bold" fill="#C1654A" text-anchor="middle">大区赛内投第一</text>
+
+  <!-- 痛点 -->
+  <text x="64" y="162" font-size="15" font-weight="bold" fill="#C1654A">痛点</text>
+  <text x="106" y="162" font-size="15" fill="#4A4A4A">｜聚会不缺游戏，缺「适合此时此地」的一局——人数、道具、时长对不上，也没人愿意讲规则、控场</text>
+
+  <!-- 产品闭环流程 -->
+  <g>
+    <rect x="64" y="196" width="208" height="76" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="168" y="228" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">拍下现场</text>
+    <text x="168" y="252" font-size="12" fill="#8A8A8A" text-anchor="middle">空间 · 物品 · 人数 · 时长</text>
+    <line x1="272" y1="234" x2="298" y2="234" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="302" y="196" width="208" height="76" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <rect x="302" y="196" width="208" height="5" rx="2.5" fill="#C1654A"/>
+    <text x="406" y="228" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">单步生成一局</text>
+    <text x="406" y="252" font-size="12" fill="#8A8A8A" text-anchor="middle">读图与生成不拆开</text>
+    <line x1="510" y1="234" x2="536" y2="234" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="540" y="196" width="208" height="76" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="644" y="228" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">AI 主持整局</text>
+    <text x="644" y="252" font-size="12" fill="#8A8A8A" text-anchor="middle">语音 · 计时 · 阶段 · 裁定</text>
+    <line x1="748" y1="234" x2="774" y2="234" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="778" y="196" width="208" height="76" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="882" y="228" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">战报回流抖音</text>
+    <text x="882" y="252" font-size="12" fill="#8A8A8A" text-anchor="middle">高光片段 · 规则卡</text>
+    <line x1="986" y1="234" x2="1012" y2="234" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="1016" y="196" width="200" height="76" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="1116" y="228" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">下一个人玩同款</text>
+    <text x="1116" y="252" font-size="12" fill="#8A8A8A" text-anchor="middle">玩法内核移植到新现场</text>
+
+    <path d="M 1116 272 L 1116 308 L 168 308 L 168 272" fill="none" stroke="#C1654A" stroke-width="2" marker-end="url(#arrA)"/>
+    <text x="642" y="290" font-size="13" font-weight="bold" fill="#C1654A" text-anchor="middle">产品的输出变成产品的输入</text>
+  </g>
+
+  <!-- harness 校准 -->
+  <text x="64" y="350" font-size="17" font-weight="bold" fill="#2D2D2D">上线前的一次架构校准——用数据拆掉多余的 harness（约束脚手架）</text>
+
+  <g>
+    <rect x="64" y="372" width="500" height="118" rx="10" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="92" y="404" font-size="16" font-weight="bold" fill="#2D2D2D">多 Agent 编排（教科书方案）</text>
+    <text x="92" y="432" font-size="14" fill="#4A4A4A">子 Agent 逐张读图，19 次工具调用</text>
+    <text x="92" y="456" font-size="14" fill="#4A4A4A">143.6 秒——还把 4 瓶水数成 5 瓶</text>
+    <text x="522" y="416" font-size="30" font-weight="bold" fill="#8A8A8A" text-anchor="end">✕</text>
+
+    <line x1="576" y1="431" x2="640" y2="431" stroke="#C1654A" stroke-width="2.5" marker-end="url(#arrA)"/>
+    <text x="608" y="416" font-size="12" fill="#C1654A" text-anchor="middle">实测否决</text>
+
+    <rect x="652" y="372" width="564" height="118" rx="10" fill="#FFFFFF" filter="url(#sh)"/>
+    <rect x="652" y="372" width="5" height="118" rx="2.5" fill="#C1654A"/>
+    <text x="684" y="404" font-size="16" font-weight="bold" fill="#2D2D2D">单步直出（线上方案）</text>
+    <text x="684" y="432" font-size="14" fill="#4A4A4A">一次调用 9 秒，答对——照片信息不压成中间稿</text>
+    <text x="684" y="456" font-size="14" fill="#4A4A4A">只保留三层把关：schema 校验 · 提示词约束 · 兜底局</text>
+    <text x="1188" y="416" font-size="30" font-weight="bold" fill="#C1654A" text-anchor="end">✓</text>
+  </g>
+
+  <g>
+    <rect x="64" y="506" width="560" height="34" rx="17" fill="#EDE5DE"/>
+    <text x="344" y="528" font-size="14" fill="#4A4A4A" text-anchor="middle">同时收权：certainty 判定从模型收回程序，逐帧报数、程序判一致性</text>
+    <rect x="648" y="506" width="568" height="34" rx="17" fill="#EDE5DE"/>
+    <text x="932" y="528" font-size="14" fill="#4A4A4A" text-anchor="middle">改造输出契约：规则只许相对量词——让下游对计数误差免疫</text>
+  </g>
+  <text x="64" y="574" font-size="17" font-weight="bold" fill="#C1654A">harness 的价值不在多，在于加在模型确实做不好、而程序确实做得好的那一层</text>
+
+  <!-- 底部数字条 -->
+  <line x1="64" y1="596" x2="1216" y2="596" stroke="#D4C5BC" stroke-width="1.5"/>
+  <text x="64" y="638" font-size="24" font-weight="bold" fill="#C1654A">49 款游戏</text>
+  <text x="64" y="662" font-size="13" fill="#8A8A8A">同一间房也能生成多种玩法</text>
+  <text x="300" y="638" font-size="24" font-weight="bold" fill="#C1654A">214 组评测</text>
+  <text x="300" y="662" font-size="13" fill="#8A8A8A">单变量消融 · 5 个模型家族</text>
+  <text x="536" y="638" font-size="24" font-weight="bold" fill="#C1654A">召回 0.62 → 0.88</text>
+  <text x="536" y="662" font-size="13" fill="#8A8A8A">输入配方 8 轮迭代</text>
+  <rect x="856" y="618" width="360" height="36" rx="18" fill="#E8D5CE"/>
+  <text x="1036" y="641" font-size="14" font-weight="bold" fill="#C1654A" text-anchor="middle">对应岗位 · 跨越「Demo 能跑」与「产品成立」</text>
+</svg>

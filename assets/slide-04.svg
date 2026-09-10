@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" style="font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif">
+  <defs>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8A8A8A"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="#F5F0EB"/>
+
+  <!-- 头部 -->
+  <text x="64" y="50" font-size="15" font-weight="bold" fill="#C1654A" letter-spacing="3">PRODUCT 03 · ZERO-TO-ONE FORM FACTOR</text>
+  <text x="64" y="98" font-size="38" font-weight="bold" fill="#2D2D2D">具身桌游框架 Ark（探月方舟）</text>
+  <text x="64" y="128" font-size="16" fill="#4A4A4A">创作者带自己的 AI，做「桌面会自己动」的桌游</text>
+  <rect x="806" y="66" width="222" height="34" rx="17" fill="#E8D5CE"/>
+  <text x="917" y="88" font-size="14" font-weight="bold" fill="#C1654A" text-anchor="middle">探月计划 Agent 赛道亚军</text>
+  <rect x="1042" y="66" width="174" height="34" rx="17" fill="#E8D5CE"/>
+  <text x="1129" y="88" font-size="14" font-weight="bold" fill="#C1654A" text-anchor="middle">WRC 展示 · 创业中</text>
+
+  <!-- 核心承诺 -->
+  <text x="64" y="162" font-size="15" font-weight="bold" fill="#C1654A">核心承诺</text>
+  <text x="138" y="162" font-size="15" fill="#4A4A4A">｜不承诺「一句话生成桌游」，只承诺「AI 写错了，使用者也能收场」</text>
+
+  <!-- 左：三层架构 -->
+  <g>
+    <text x="64" y="212" font-size="16" font-weight="bold" fill="#2D2D2D">引擎三层：复杂性留在框架里</text>
+    <rect x="64" y="228" width="496" height="82" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="92" y="260" font-size="15" font-weight="bold" fill="#2D2D2D">感知层</text>
+    <text x="92" y="286" font-size="13" fill="#4A4A4A">一颗普通摄像头：厘米级定位 · 占用栅格 · 无接触心率</text>
+    <line x1="312" y1="310" x2="312" y2="328" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="64" y="332" width="496" height="82" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <rect x="64" y="332" width="5" height="82" rx="2.5" fill="#C1654A"/>
+    <text x="92" y="364" font-size="15" font-weight="bold" fill="#2D2D2D">决策层</text>
+    <text x="92" y="390" font-size="13" fill="#4A4A4A">每个角色独立 Agent（目标 / 性格 / 权限），只在合法动作集内选择</text>
+    <line x1="312" y1="414" x2="312" y2="432" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="64" y="436" width="496" height="82" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="92" y="468" font-size="15" font-weight="bold" fill="#2D2D2D">执行层（安全锁死）</text>
+    <text x="92" y="494" font-size="13" fill="#4A4A4A">A* 路径 · 限速 · 看门狗急停——任何配置与模型输出都放宽不了</text>
+    <text x="64" y="556" font-size="16" font-style="italic" fill="#C1654A">「机械臂可以有脾气，绝不会发疯。」</text>
+  </g>
+
+  <!-- 右：四道护栏 -->
+  <g>
+    <text x="620" y="212" font-size="16" font-weight="bold" fill="#2D2D2D">给创作者 AI 的四道护栏</text>
+    <rect x="620" y="228" width="286" height="106" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="644" y="258" font-size="20" font-weight="bold" fill="#C1654A">01</text>
+    <text x="682" y="258" font-size="15" font-weight="bold" fill="#2D2D2D">接口够高层</text>
+    <text x="644" y="286" font-size="13" fill="#4A4A4A">AI 碰不到坐标、控制与时序</text>
+    <text x="644" y="308" font-size="12" fill="#8A8A8A">缩小犯错面</text>
+    <rect x="930" y="228" width="286" height="106" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="954" y="258" font-size="20" font-weight="bold" fill="#C1654A">02</text>
+    <text x="992" y="258" font-size="15" font-weight="bold" fill="#2D2D2D">词表闭合</text>
+    <text x="954" y="286" font-size="13" fill="#4A4A4A">能力与动作全是枚举</text>
+    <text x="954" y="308" font-size="12" fill="#8A8A8A">非法结构拼不出来</text>
+    <rect x="620" y="354" width="286" height="106" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="644" y="384" font-size="20" font-weight="bold" fill="#C1654A">03</text>
+    <text x="682" y="384" font-size="15" font-weight="bold" fill="#2D2D2D">校验报错回喂</text>
+    <text x="644" y="412" font-size="13" fill="#4A4A4A">结构 + 语义两道关，加载前拦截</text>
+    <text x="644" y="434" font-size="12" fill="#8A8A8A">报错回喂给 AI 自愈</text>
+    <rect x="930" y="354" width="286" height="106" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="954" y="384" font-size="20" font-weight="bold" fill="#C1654A">04</text>
+    <text x="992" y="384" font-size="15" font-weight="bold" fill="#2D2D2D">安全锁在引擎层</text>
+    <text x="954" y="412" font-size="13" fill="#4A4A4A">物理安全不进配置空间</text>
+    <text x="954" y="434" font-size="12" fill="#8A8A8A">不可绕过的兜底</text>
+    <rect x="620" y="480" width="596" height="52" rx="10" fill="#E8D5CE"/>
+    <text x="918" y="512" font-size="15" font-weight="bold" fill="#C1654A" text-anchor="middle">验收指标：AI 犯错被捕获并自愈的轮数——生成可靠性成为可测量的数</text>
+  </g>
+
+  <!-- 底部数字条 -->
+  <line x1="64" y1="592" x2="1216" y2="592" stroke="#D4C5BC" stroke-width="1.5"/>
+  <text x="64" y="634" font-size="24" font-weight="bold" fill="#C1654A">113 项测试</text>
+  <text x="64" y="660" font-size="13" fill="#8A8A8A">开源 SDK · 六种能力契约</text>
+  <text x="316" y="634" font-size="24" font-weight="bold" fill="#C1654A">3 分钟</text>
+  <text x="316" y="660" font-size="13" fill="#8A8A8A">新设备接入引擎</text>
+  <text x="568" y="634" font-size="24" font-weight="bold" fill="#C1654A">零代码改动</text>
+  <text x="568" y="660" font-size="13" fill="#8A8A8A">第二款游戏当场生成</text>
+  <rect x="836" y="614" width="380" height="36" rx="18" fill="#E8D5CE"/>
+  <text x="1026" y="637" font-size="14" font-weight="bold" fill="#C1654A" text-anchor="middle">对应岗位 · 定义产品形态 × 人机协作边界</text>
+</svg>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>探月方舟 Moonfall · 马元一</title>
+<meta name="description" content="以机器人为实体角色、由 AI Agent 驱动的实体游戏平台。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.92em' font-size='92' font-family='Georgia,serif'>马</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.doc{max-width:46em;margin:0 auto}
+.slide-sec{padding:8px 0 26px;border-bottom:1px solid var(--rule)}
+.slide-sec:last-child{border-bottom:0}
+.slide-sec h2{display:flex;align-items:baseline;gap:12px;font-size:24px;margin:44px 0 10px}
+.slide-sec h2 .pg{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--ink-3)}
+.slide-sec .lead{font-size:18px;color:var(--ink);margin:0 0 6px;line-height:1.6}
+.slide-sec figure{margin:20px 0 22px}
+.slide-sec figure img{display:block;width:100%;height:auto;border:1px solid var(--rule)}
+.slide-sec h4{font-size:16px;font-weight:600;margin:20px 0 4px;color:var(--ink)}
+.slide-sec p{color:var(--ink-2);font-size:15.5px;margin:0 0 10px;line-height:1.8}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="top-in">
+    <a class="wordmark" href="../index.html">马元一</a>
+    <nav>
+      <a href="index.html" aria-current="page">产品</a>
+      <a href="../research/index.html">研究</a>
+      <a href="../about/index.html">关于</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="masthead">
+    <h1>探月方舟 Moonfall</h1>
+    <p class="sub">以机器人为实体角色、由 AI Agent 驱动的实体游戏平台</p>
+    <div class="chips" style="margin-top:16px">
+      <a href="https://www.bilibili.com/video/BV1evtf6hEaW/" target="_blank" rel="noopener">Demo 视频</a>
+      <span class="none">代码暂不公开</span>
+      <a href="index.html">全部产品</a>
+    </div>
+  </div>
+
+  <div class="doc">
+
+<section class="slide-sec">
+<h2><span class="pg">02</span>行业背景 · Why Now</h2>
+<p class="lead">AI、机器人与桌游正在第一次真正汇合</p>
+<figure><img src="../assets/works/moonfall/p-02.jpg" alt="探月方舟 第 2 页" loading="lazy"></figure>
+<h4>用户市场已经成熟</h4>
+<p>2025 年中国桌游市场规模达 78.25 亿元，电子桌游约占 55%；头部预售平台 2021–2025 年参与人数增长超过 110%</p>
+<h4>用户已接受 AI 进入游戏过程</h4>
+<p>54.6% 期待 AI 主持人，46.7% 期待 AI 玩家。用户不是在等 AI 替他设计桌游，而是在等 AI 帮他&quot;运行桌游世界&quot;</p>
+<h4>技术第一次允许&quot;数字决策→真实行动&quot;</h4>
+<p>过去：AI → 屏幕<br>现在：感知 → Agent → Rules Engine → Robot → Physical World<br>大模型成本下降 + 低成本机器人硬件成熟 + 机器人技术进步迅速</p>
+<p>桌游已经证明实体社交的价值，AI 正在提供智能，机器人第一次让智能真正作用于棋盘</p>
+</section>
+<section class="slide-sec">
+<h2><span class="pg">03</span>用户痛点</h2>
+<p class="lead">桌游 / 电子游戏各有优缺点</p>
+<figure><img src="../assets/works/moonfall/p-03.jpg" alt="探月方舟 第 3 页" loading="lazy"></figure>
+<h4>目标用户画像</h4>
+<p>年龄 桌游 / 电子游戏核心玩家<br>需求 保留实体社交，获得智能反馈<br>痛点 不满桌游静态繁琐，也不满电子游戏虚拟隔绝<br>期待 两者融合的全新游戏方式</p>
+<h4>现有痛点</h4>
+<p>桌游难以持续进化</p>
+<p>规则和玩法固定，角色行为和最优策略容易被预测。</p>
+<h4>电子游戏无真实交互</h4>
+<p>角色活在虚拟世界，没有人和人之间的交互。</p>
+<h4>规则结算复杂</h4>
+<p>桌游入门需要一段时间学习规则和策略。</p>
+<h4>解决方案</h4>
+<p>让游戏变得易入门，可持续。</p>
+<p>玩家喜欢桌游的实体感和面对面社交，但不应该再承担&quot;运行整个游戏世界&quot;的成本。</p>
+</section>
+<section class="slide-sec">
+<h2><span class="pg">04</span>产品架构</h2>
+<p class="lead">机器人+卡牌物料+摄像头+游戏面板+软件平台</p>
+<figure><img src="../assets/works/moonfall/p-04.jpg" alt="探月方舟 第 4 页" loading="lazy"></figure>
+<h4>机器人</h4>
+<p>卡牌与桌游物料</p>
+<h4>摄像头</h4>
+<p>游戏面板</p>
+<p>+</p>
+<p>+</p>
+<h4>→</h4>
+<p>目标产品示意</p>
+<p>软件平台驱动，一套硬件适配多款游戏</p>
+</section>
+<section class="slide-sec">
+<h2><span class="pg">05</span>产品形态</h2>
+<p class="lead">《探月方舟》MoonFall 平台上的第一款游戏</p>
+<figure><img src="../assets/works/moonfall/p-05.jpg" alt="探月方舟 第 5 页" loading="lazy"></figure>
+<p>宇航员（桌面机器人）迫降月球，你是指挥官。打出卡牌、下达策略，和其他玩家合作收集资源或抢夺其他玩家的资源，修复飞船，获得胜利。</p>
+<p>一个回合的玩法</p>
+<p>玩家打出卡牌，下达策略目标</p>
+<p>宇航员（自主导航桌面机器人）自主规划路径、避障移动</p>
+<p>AI 控制的移动机器人作为移动资源站，根据游戏局面动态变化</p>
+<p>AI 控制的机械臂&quot;上帝之手&quot;不定期摆放道具，实时改写地图地形</p>
+<p>AI<br>接入到不同阵营的机器人</p>
+<p>机器人<br>自主机器人扮演不同角色</p>
+<p>传感器<br>检测玩家状态</p>
+</section>
+<section class="slide-sec">
+<h2><span class="pg">06</span>技术方案</h2>
+<figure><img src="../assets/works/moonfall/p-06.jpg" alt="探月方舟 第 6 页" loading="lazy"></figure>
+<p>一套带反馈的闭环系统！<br>玩家负责出牌，Agent负责决策，规则引擎保证行动，机器人负责执行</p>
+</section>
+<section class="slide-sec">
+<h2><span class="pg">07</span>市场验证</h2>
+<p class="lead">300+</p>
+<figure><img src="../assets/works/moonfall/p-07.jpg" alt="探月方舟 第 7 页" loading="lazy"></figure>
+<p>用户完成现场体验</p>
+<h4>200+</h4>
+<p>用户期待后续产品</p>
+<h4>15 分钟+</h4>
+<p>用户平均体验时长</p>
+<h4>&gt;60%</h4>
+<p>用户主动询价</p>
+<h4>玩家与行业的双侧验证</h4>
+<p>玩家侧 · WRC 现场种子测试</p>
+<p>行业侧 · 制作人主动投递</p>
+<h4>5 小时 · 10+ 位</h4>
+<p>发布制作人共创招募后 5 小时内，收到 10+ 位拥有桌游从业经历的人员投递简历</p>
+</section>
+<section class="slide-sec">
+<h2><span class="pg">08</span>商业模式 &amp; GTM</h2>
+<p class="lead">C端验证 → B端规模复制 → 平台生态</p>
+<figure><img src="../assets/works/moonfall/p-08.jpg" alt="探月方舟 第 8 页" loading="lazy"></figure>
+<p>Phase 1 · C端验证</p>
+<h4>获客 展会/社群/众筹</h4>
+<p>收入 硬件设备+扩展内容</p>
+<h4>已初步验证</h4>
+<p>Phase 2 · B端规模复制</p>
+<h4>获客 用C端数据敲B端</h4>
+<p>收入 设备+内容+运营服务</p>
+<p>目标客户<br>科技馆/体验馆/桌游店/IP空间</p>
+<p>Phase 3 · 平台生态</p>
+<h4>获客 装机量后开放SDK</h4>
+<p>收入 Marketplace抽成</p>
+<p>长期价值<br>类似Switch：硬件+内容+平台</p>
+<p>硬件是入口，内容带来复购，平台形成长期价值</p>
+</section>
+<section class="slide-sec">
+<h2><span class="pg">09</span>竞争格局</h2>
+<p class="lead">数字+实体桌游已被市场验证，MoonFall更进一步</p>
+<figure><img src="../assets/works/moonfall/p-09.jpg" alt="探月方舟 第 9 页" loading="lazy"></figure>
+<h4>传统桌游</h4>
+<p>纯静态实体组件，无电子元素</p>
+<p>✓ 实体社交体验最强<br>✓ 品类丰富，随时随地可玩</p>
+<p>✗ 规则门槛高，玩家兼任裁判<br>✗ 内容固定，无法动态进化</p>
+<p>Cauldron Call</p>
+<h4>电动大锅自主移动，无AI</h4>
+<p>✓ 实体组件可自主移动<br>✓ 每局路径不可预测</p>
+<p>✗ 仅预设移动+避障<br>✗ 硬件绑定单款游戏</p>
+<h4>Board</h4>
+<p>24英寸触摸屏+棋子识别</p>
+<p>✓ 数字屏幕+实体棋子融合<br>✓ 平台化可加载多款游戏</p>
+<p>✗ 本质仍是电子游戏<br>✗ 无AI Agent，只是规则辅助</p>
+<h4>MoonFall</h4>
+<p>AI Agent+机器人实体执行闭环</p>
+<p>✓ AI Agent驱动角色决策<br>✓ 机器人真实执行，规则自动运行<br>✓ 保留原始桌游的特点</p>
+<p>数字形态桌游与物理实体联动的品类已被市场验证：Board上线7个月融资3500万美元，Cauldron Call Kickstarter众筹20万+美元。MoonFall在已验证的方向上更进一步：从&quot;实体移动&quot;和&quot;数字辅助&quot;进化到&quot;AI Agent驱动+机器人实体执行&quot;的完整闭环。</p>
+</section>
+<section class="slide-sec">
+<h2><span class="pg">10</span>项目规划</h2>
+<p class="lead">从 MVP 验证到可复制的产品</p>
+<figure><img src="../assets/works/moonfall/p-10.jpg" alt="探月方舟 第 10 页" loading="lazy"></figure>
+<h4>当前</h4>
+<p>MVP 原型<br>展会体验验证<br>1款完整游戏</p>
+<h4>+3 个月</h4>
+<p>产品工程化<br>稳定性/BOM/包装<br>认证准备</p>
+<h4>+6 个月</h4>
+<p>首批量产<br>众筹/早鸟用户<br>2-3款可运行内容</p>
+<h4>+12 个月</h4>
+<p>B端付费验证<br>科技馆/体验馆试点<br>海外市场启动</p>
+<p>+18 个月</p>
+<h4>下一轮</h4>
+<p>四条线同步推进：产品（商品化）→ 用户（真实付费）→ 内容（2-3款验证平台复用）→ B端（付费试点）</p>
+</section>
+<section class="slide-sec">
+<h2><span class="pg">11</span>下一代 AI + 机器人驱动的实体游戏</h2>
+<figure><img src="../assets/works/moonfall/p-11.jpg" alt="探月方舟 第 11 页" loading="lazy"></figure>
+</section>
+  </div>
+
+  <div class="chips" style="margin-top:44px"><a href="play-the-room.html">← 玩点真的</a><a href="proofmarket.html">ProofMarket →</a></div>
+
+  <footer>
+    <span>© 2026 马元一</span>
+    <span><a href="../index.html">返回首页</a></span>
+  </footer>
+</div>
+
+<button id="themeBtn" type="button" aria-label="切换深色模式">◐</button>
+<script src="../assets/theme.js"></script>
+</body>
+</html>

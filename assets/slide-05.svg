@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" style="font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif">
+  <defs>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8A8A8A"/>
+    </marker>
+    <marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C1654A"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="#F5F0EB"/>
+
+  <!-- 头部 -->
+  <text x="64" y="50" font-size="15" font-weight="bold" fill="#C1654A" letter-spacing="3">PRODUCT 04 · TRUST BY MECHANISM</text>
+  <text x="64" y="98" font-size="38" font-weight="bold" fill="#2D2D2D">ProofMarket</text>
+  <text x="64" y="128" font-size="16" fill="#4A4A4A">Agent 间可验证、可挑战、可结算的研究简报协议</text>
+  <rect x="836" y="66" width="196" height="34" rx="17" fill="#E8D5CE"/>
+  <text x="934" y="88" font-size="14" font-weight="bold" fill="#C1654A" text-anchor="middle">AI+Web3 黑客松亚军</text>
+  <rect x="1046" y="66" width="170" height="34" rx="17" fill="#E8D5CE"/>
+  <text x="1131" y="88" font-size="14" font-weight="bold" fill="#C1654A" text-anchor="middle">双链真实部署</text>
+
+  <!-- 机制支点 -->
+  <text x="64" y="162" font-size="15" font-weight="bold" fill="#C1654A">机制支点</text>
+  <text x="138" y="162" font-size="15" fill="#4A4A4A">｜产出一份好简报很难，抽查它做没做对很容易——先信任交付、抽查兜底，让作恶的期望收益为负</text>
+
+  <!-- 协议流程 -->
+  <g>
+    <rect x="64" y="198" width="176" height="84" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="152" y="230" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">用户 Agent 委托</text>
+    <text x="152" y="254" font-size="12" fill="#8A8A8A" text-anchor="middle">预算内授权 · 边界受控</text>
+    <line x1="240" y1="240" x2="262" y2="240" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="266" y="198" width="192" height="84" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="362" y="224" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">专家 Agent 交付</text>
+    <text x="362" y="248" font-size="12" fill="#8A8A8A" text-anchor="middle">简报逐条挂来源定位</text>
+    <text x="362" y="268" font-size="12" fill="#8A8A8A" text-anchor="middle">Merkle 承诺 · 原文不动</text>
+    <line x1="458" y1="240" x2="480" y2="240" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="484" y="198" width="140" height="84" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <rect x="484" y="198" width="140" height="5" rx="2.5" fill="#C1654A"/>
+    <text x="554" y="230" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">直接放款</text>
+    <text x="554" y="254" font-size="12" fill="#8A8A8A" text-anchor="middle">不做事前审查</text>
+    <line x1="624" y1="240" x2="646" y2="240" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="650" y="198" width="176" height="84" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="738" y="230" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">概率抽查</text>
+    <text x="738" y="254" font-size="12" fill="#8A8A8A" text-anchor="middle">拿本地权威资料比对</text>
+    <line x1="826" y1="240" x2="848" y2="240" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="852" y="198" width="150" height="84" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="927" y="230" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">发起挑战</text>
+    <text x="927" y="254" font-size="12" fill="#8A8A8A" text-anchor="middle">押金约束滥诉</text>
+    <line x1="1002" y1="240" x2="1024" y2="240" stroke="#8A8A8A" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="1028" y="198" width="188" height="84" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <text x="1122" y="224" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">AI 陪审团裁决</text>
+    <text x="1122" y="248" font-size="12" fill="#8A8A8A" text-anchor="middle">七条规程 · 可离线复核</text>
+    <text x="1122" y="268" font-size="12" fill="#8A8A8A" text-anchor="middle">罚没或维持</text>
+  </g>
+
+  <!-- 左下：三层挑战梯 -->
+  <g>
+    <text x="64" y="330" font-size="16" font-weight="bold" fill="#2D2D2D">挑战分三层——评估口径会反向塑造被评估者</text>
+    <rect x="64" y="348" width="560" height="56" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <rect x="64" y="348" width="5" height="56" rx="2.5" fill="#C1654A"/>
+    <text x="88" y="374" font-size="14" font-weight="bold" fill="#2D2D2D">L1 机械可验</text>
+    <text x="88" y="394" font-size="12" fill="#8A8A8A">来源不存在 / 摘录对不上</text>
+    <text x="600" y="382" font-size="13" font-weight="bold" fill="#C1654A" text-anchor="end">硬扣质押</text>
+    <rect x="104" y="416" width="520" height="56" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <rect x="104" y="416" width="5" height="56" rx="2.5" fill="#C1654A"/>
+    <text x="128" y="442" font-size="14" font-weight="bold" fill="#2D2D2D">L2 范围可裁</text>
+    <text x="128" y="462" font-size="12" fill="#8A8A8A">承诺检索范围内的漏检</text>
+    <text x="600" y="450" font-size="13" font-weight="bold" fill="#C1654A" text-anchor="end">扣罚 · 裁量留痕</text>
+    <rect x="144" y="484" width="480" height="56" rx="8" fill="#FFFFFF" filter="url(#sh)"/>
+    <rect x="144" y="484" width="5" height="56" rx="2.5" fill="#8A8A8A"/>
+    <text x="168" y="510" font-size="14" font-weight="bold" fill="#2D2D2D">L3 质量主观</text>
+    <text x="168" y="530" font-size="12" fill="#8A8A8A">「不够好」「不喜欢」</text>
+    <text x="600" y="518" font-size="13" font-weight="bold" fill="#4A4A4A" text-anchor="end">只进评分 · 永不扣罚</text>
+    <text x="64" y="572" font-size="14" font-style="italic" fill="#C1654A">「一旦『不够好』可以扣钱，理性策略就会变成防御性的废话输出。」</text>
+  </g>
+
+  <!-- 右下：为什么可信 -->
+  <g>
+    <rect x="680" y="330" width="536" height="212" rx="10" fill="#EDE5DE"/>
+    <text x="708" y="366" font-size="16" font-weight="bold" fill="#C1654A">为什么这套裁决可信</text>
+    <text x="708" y="400" font-size="14" fill="#4A4A4A">模型版本与规程哈希写入合约——任何一票可离线重跑复核</text>
+    <text x="708" y="430" font-size="14" fill="#4A4A4A">三问理由书随票上链，异议票连全文一起留痕</text>
+    <text x="708" y="460" font-size="14" fill="#4A4A4A">合约层强制兼听：应辩窗口结束前投不了票</text>
+    <text x="708" y="490" font-size="14" fill="#4A4A4A">经济上构造成：自买自挑战净收益恒为负</text>
+    <text x="708" y="524" font-size="13" fill="#8A8A8A">同时诚实自陈：陪审方是当前的中心化信任根</text>
+  </g>
+
+  <!-- 底部数字条 -->
+  <line x1="64" y1="592" x2="1216" y2="592" stroke="#D4C5BC" stroke-width="1.5"/>
+  <text x="64" y="634" font-size="24" font-weight="bold" fill="#C1654A">5 份合约</text>
+  <text x="64" y="660" font-size="13" fill="#8A8A8A">Sepolia + Injective 双链部署</text>
+  <text x="310" y="634" font-size="24" font-weight="bold" fill="#C1654A">13 份设计文档</text>
+  <text x="310" y="660" font-size="13" fill="#8A8A8A">含信任模型与攻防分析</text>
+  <text x="556" y="634" font-size="24" font-weight="bold" fill="#C1654A">争议最小披露</text>
+  <text x="556" y="660" font-size="13" fill="#8A8A8A">只交换单条叶子与哈希路径</text>
+  <rect x="856" y="614" width="360" height="36" rx="18" fill="#E8D5CE"/>
+  <text x="1036" y="637" font-size="14" font-weight="bold" fill="#C1654A" text-anchor="middle">对应岗位 · 评估机制 × 底层技术对话力</text>
+</svg>
