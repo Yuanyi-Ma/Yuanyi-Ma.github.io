@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <rect width="1600" height="900" fill="#F5F3EF"/>
+  <rect x="0.5" y="0.5" width="1599" height="899" fill="none" stroke="#E6E2DC"/>
+
+  <!-- 左：标题 -->
+  <text x="110" y="250" font-family="'IBM Plex Mono', Menlo, monospace" font-size="24" letter-spacing="6" fill="#6F6A64">MEMLOOM</text>
+  <text x="104" y="420" font-family="'Songti SC', 'Noto Serif SC', serif" font-size="150" font-weight="600" fill="#1A1A19">织忆</text>
+  <rect x="110" y="476" width="72" height="4" fill="#A33F26"/>
+  <text x="110" y="560" font-family="'PingFang SC', 'Noto Sans SC', sans-serif" font-size="36" fill="#1A1A19">人和自己 AI 之间的知识治理层</text>
+  <text x="110" y="622" font-family="'PingFang SC', 'Noto Sans SC', sans-serif" font-size="36" fill="#55524E">AI 找候选、人判价值</text>
+
+  <!-- 右：对话流 → 候选知识 → 人审门 → 两版 -->
+  <g fill="none" stroke="#C4BDB3" stroke-width="2.5" stroke-linecap="round">
+    <path d="M800 270 C 880 250, 960 292, 1060 270"/>
+    <path d="M800 330 C 880 352, 960 308, 1060 330"/>
+    <path d="M800 390 C 880 370, 960 412, 1060 390"/>
+    <path d="M800 450 C 880 472, 960 428, 1060 450"/>
+    <path d="M800 510 C 880 490, 960 532, 1060 510"/>
+    <path d="M800 570 C 880 592, 960 548, 1060 570"/>
+    <path d="M800 630 C 880 610, 960 652, 1060 630"/>
+  </g>
+  <g fill="#A33F26">
+    <circle cx="905" cy="336" r="10"/>
+    <circle cx="985" cy="443" r="10"/>
+    <circle cx="870" cy="503" r="10"/>
+    <circle cx="960" cy="633" r="10"/>
+  </g>
+  <text x="800" y="214" font-family="'PingFang SC', sans-serif" font-size="24" fill="#55524E">对话流</text>
+  <circle cx="918" cy="206" r="8" fill="#A33F26"/>
+  <text x="936" y="214" font-family="'PingFang SC', sans-serif" font-size="24" fill="#55524E">候选知识</text>
+
+  <rect x="1060" y="226" width="60" height="448" rx="30" fill="#1A1A19"/>
+  <g font-family="'PingFang SC', sans-serif" font-size="28" fill="#FDFDFC" text-anchor="middle">
+    <text x="1090" y="416">人</text>
+    <text x="1090" y="460">审</text>
+    <text x="1090" y="504">门</text>
+  </g>
+
+  <g fill="none" stroke="#A33F26" stroke-width="3.5" stroke-linecap="round">
+    <path d="M1120 330 C 1160 330, 1160 450, 1196 450"/>
+    <path d="M1120 570 C 1160 570, 1160 450, 1196 450"/>
+    <path d="M1196 450 C 1230 450, 1222 340, 1262 340"/>
+    <path d="M1196 450 C 1230 450, 1222 560, 1262 560"/>
+  </g>
+  <circle cx="1196" cy="450" r="11" fill="#A33F26"/>
+
+  <g>
+    <rect x="1262" y="276" width="280" height="128" rx="8" fill="#FDFDFC" stroke="#1A1A19" stroke-width="2"/>
+    <text x="1288" y="330" font-family="'Songti SC', serif" font-size="32" font-weight="600" fill="#1A1A19">人用版</text>
+    <text x="1288" y="374" font-family="'PingFang SC', sans-serif" font-size="21" fill="#55524E">机制 · 边界 · 例子</text>
+    <rect x="1262" y="496" width="280" height="128" rx="8" fill="#FDFDFC" stroke="#1A1A19" stroke-width="2"/>
+    <text x="1288" y="550" font-family="'Songti SC', serif" font-size="32" font-weight="600" fill="#1A1A19">Agent 用版</text>
+    <text x="1288" y="594" font-family="'PingFang SC', sans-serif" font-size="21" fill="#55524E">规则 · 约束 · 调用条件</text>
+    <path d="M1402 412 V 488" stroke="#6F6A64" stroke-width="2" stroke-dasharray="5 6" fill="none"/>
+    <rect x="1337" y="432" width="130" height="36" fill="#F5F3EF"/>
+    <text x="1402" y="458" font-family="'PingFang SC', sans-serif" font-size="21" fill="#55524E" text-anchor="middle">两版不漂移</text>
+  </g>
+</svg>

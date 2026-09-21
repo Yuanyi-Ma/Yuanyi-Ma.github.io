@@ -10,25 +10,28 @@
 </head>
 <body>
 
-<div class="top">
+<header class="top">
   <div class="top-in">
     <a class="wordmark" href="../index.html">马元一</a>
     <nav>
-      <a href="../products/index.html">产品</a>
+      <a href="../experience/index.html">经历</a>
       <a href="../research/index.html">研究</a>
-      <a href="../about/index.html">关于</a>
+      <a href="../products/index.html">产品</a>
+      <a href="../competitions/index.html" aria-current="page">竞赛</a>
     </nav>
+    <button id="themeBtn" type="button" aria-label="切换深色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor"/></svg></button>
   </div>
-</div>
+</header>
 
 <div class="wrap">
+  <p class="crumb"><a href="index.html">← 本科竞赛</a></p>
   <div class="masthead">
     <h1>中国国际飞行器设计挑战赛</h1>
     <p class="sub">2018 年 9 月 · 北航航模队 · 限时载运空投一等奖、单项团体第一名</p>
   </div>
 
-  <figure class="lead-photo"><img src="../assets/works/ug/cadc/plane.jpg" alt="比赛飞机"><figcaption>比赛飞机</figcaption></figure>
-
+  <div class="lead-grid">
+    <figure class="lead-photo"><img src="../assets/works/ug/cadc/plane.jpg" alt="比赛飞机"><figcaption>比赛飞机</figcaption></figure>
   <ul class="facts">
     <li><b>项目</b><span>限时载运空投</span></li>
     <li><b>成绩</b><span>一等奖；单项团体第一名</span></li>
@@ -36,20 +39,31 @@
     <li><b>队伍</b><span>北京航空航天大学航模队</span></li>
     <li><b>我的分工</b><span>动力系统</span></li>
   </ul>
+  </div>
 
-  <h2 class="serif">做了什么</h2>
+  <section class="sec">
+    <h2>做了什么</h2>
+    <div>
   <div class="prose">
     <p>大一上学期加入北航航模队，经过面试和预备队员训练，成为正式队员。</p>
     <p>2018 年 7 月初到 9 月底是暑期集训，一共只休息了两天。每天从早上八点半做到晚上十点，八月中旬以后常常加班，有时到凌晨两三点才离开训练基地，备赛时间超过 980 小时。</p>
     <p>我在队里负责动力系统，这一年的动力系统比前一年提升了约 30%。比赛中，北航在限时载运空投项目包揽冠亚季军，这是航模队当时的历史最好成绩。</p>
   </div>
+    </div>
+  </section>
 
-  <h2 class="serif">照片</h2>
+
+  <section class="sec">
+    <h2>照片</h2>
+    <div>
   <div class="gallery three">
     <figure><a href="../assets/works/ug/cadc/engine.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/cadc/engine.jpg" alt="检修无人机发动机" loading="lazy"></a><figcaption>检修无人机发动机</figcaption></figure>
     <figure><a href="../assets/works/ug/cadc/podium.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/cadc/podium.jpg" alt="颁奖" loading="lazy"></a><figcaption>颁奖</figcaption></figure>
     <figure><a href="../assets/works/ug/cadc/trophy.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/cadc/trophy.jpg" alt="赛后与奖杯合影" loading="lazy"></a><figcaption>赛后与奖杯合影</figcaption></figure>
   </div>
+    </div>
+  </section>
+
 
   <nav class="pager">
     <a class="prev" href="robot.html"><span>上一项</span>← 机器人创意大赛</a>
@@ -61,8 +75,6 @@
   </footer>
 
 </div>
-
-<button id="themeBtn" type="button" aria-label="切换深色模式">◐</button>
 <script src="../assets/theme.js"></script>
 </body>
 </html>

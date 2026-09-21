@@ -10,25 +10,28 @@
 </head>
 <body>
 
-<div class="top">
+<header class="top">
   <div class="top-in">
     <a class="wordmark" href="../index.html">马元一</a>
     <nav>
-      <a href="../products/index.html">产品</a>
+      <a href="../experience/index.html">经历</a>
       <a href="../research/index.html">研究</a>
-      <a href="../about/index.html">关于</a>
+      <a href="../products/index.html">产品</a>
+      <a href="../competitions/index.html" aria-current="page">竞赛</a>
     </nav>
+    <button id="themeBtn" type="button" aria-label="切换深色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor"/></svg></button>
   </div>
-</div>
+</header>
 
 <div class="wrap">
+  <p class="crumb"><a href="index.html">← 本科竞赛</a></p>
   <div class="masthead">
     <h1>中国高校智能机器人创意大赛</h1>
     <p class="sub">2019 年 5 月 · 轮式自主格斗项目 · 全国一等奖</p>
   </div>
 
-  <figure class="lead-photo"><img src="../assets/works/ug/robot/robot.jpg" alt="比赛作品"><figcaption>比赛作品</figcaption></figure>
-
+  <div class="lead-grid">
+    <figure class="lead-photo"><img src="../assets/works/ug/robot/robot.jpg" alt="比赛作品"><figcaption>比赛作品</figcaption></figure>
   <ul class="facts">
     <li><b>项目</b><span>轮式自主格斗</span></li>
     <li><b>成绩</b><span>一等奖</span></li>
@@ -36,8 +39,11 @@
     <li><b>队伍</b><span>北京航空航天大学「太极小车」，三人</span></li>
     <li><b>我的分工</b><span>领队；编程；轮子定制</span></li>
   </ul>
+  </div>
 
-  <h2 class="serif">做了什么</h2>
+  <section class="sec">
+    <h2>做了什么</h2>
+    <div>
   <div class="prose">
     <p>队伍三个人，我任领队。这个比赛没有现成的团队和学长带，经费和测试场地都要我们自己想办法。</p>
     <div class="key">
@@ -46,12 +52,20 @@
     </div>
     <p>编程也由我负责，从程序编写到一遍遍调试。机器人在比赛中坚持到了最后，拿到一等奖。</p>
   </div>
+    </div>
+  </section>
 
-  <h2 class="serif">照片</h2>
+
+  <section class="sec">
+    <h2>照片</h2>
+    <div>
   <div class="gallery">
     <figure><a href="../assets/works/ug/robot/arena.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/robot/arena.jpg" alt="比赛场地" loading="lazy"></a><figcaption>比赛场地</figcaption></figure>
     <figure><a href="../assets/works/ug/robot/team.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/robot/team.jpg" alt="赛后合影" loading="lazy"></a><figcaption>赛后合影</figcaption></figure>
   </div>
+    </div>
+  </section>
+
 
   <nav class="pager">
     <a class="prev" href="fengru.html"><span>上一项</span>← 冯如三号世界纪录</a>
@@ -64,8 +78,6 @@
   </footer>
 
 </div>
-
-<button id="themeBtn" type="button" aria-label="切换深色模式">◐</button>
 <script src="../assets/theme.js"></script>
 </body>
 </html>

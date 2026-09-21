@@ -4,90 +4,60 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>研究 · 马元一</title>
-<meta name="description" content="马元一的研究方向：区块链系统的并发执行与低依赖账本模型。FusionChain、MixChain、FreeFlow 三篇工作。">
+<meta name="description" content="马元一的研究：区块链系统的性能优化，从价值流通的语义出发分析交易依赖。论文 FreeFlow、MixChain、FusionChain。">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.92em' font-size='92' font-family='Georgia,serif'>马</text></svg>">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
-<div class="top">
+<header class="top">
   <div class="top-in">
     <a class="wordmark" href="../index.html">马元一</a>
     <nav>
+      <a href="../experience/index.html">经历</a>
+      <a href="../research/index.html" aria-current="page">研究</a>
       <a href="../products/index.html">产品</a>
-      <a href="index.html" aria-current="page">研究</a>
-      <a href="../about/index.html">关于</a>
+      <a href="../competitions/index.html">竞赛</a>
     </nav>
+    <button id="themeBtn" type="button" aria-label="切换深色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor"/></svg></button>
   </div>
-</div>
+</header>
 
 <div class="wrap">
-
   <div class="masthead">
     <h1>研究</h1>
-    <p class="sub">区块链系统的并发执行与账本模型。导师：李京教授，中国科学技术大学。</p>
+    <p class="sub">区块链系统的性能优化。导师：李京教授，中国科学技术大学。</p>
   </div>
-
-  <div class="prose" style="margin-top:26px">
-    <p>研究的问题是区块链的吞吐为什么上不去。</p>
-    <p>直接原因是交易之间存在依赖。账户模型下，同一个账户的交易必须串行执行——两笔转账都要读写同一个余额，谁先谁后的结果不一样，所以不能同时跑。链上应用越密集，热点账户越多，能并行的部分就越少。</p>
-    <p>三篇工作的共同做法是把账本模型改造成依赖更少的形式，让更多交易可以并行执行。</p>
-    <ul>
-      <li><strong>FusionChain</strong>：在以太坊上融合 UTXO 模型。UTXO 没有共享状态，区块内的 UTXO 交易可以并行执行，代价是需要给出两种模型之间的数据转换方法。</li>
-      <li><strong>MixChain</strong>：用 Vessel 替代 UTXO。UTXO 的问题是表达能力弱、和账户模型的合约生态不兼容；Vessel 通过扩展合约规则模块补上这两点，再配一套两阶段共识和交易预处理机制，让两类交易能在同一条链上安全高效地共存。</li>
-      <li><strong>FreeFlow</strong>：先把链上应用抽象成「价值流通」，逐阶段分析依赖的来源，再据此区分价值对象和非价值状态对象，给出低依赖的模型和配套编程方法。</li>
+  <section class="sec">
+    <h2>方向</h2>
+    <div>
+    <p class="lede">从价值流通的语义出发分析交易依赖，据此设计账本模型和各层机制，提升区块链的性能。</p>
+    <ul class="defs soft">
+      <li><b>背景</b><p>区块链是一种特殊的分布式系统，每个节点都要执行相同的交易，性能因此成为瓶颈。为了保证各节点的执行结果一致，交易通常按顺序执行；要引入并行来提升性能，就要先处理交易之间的依赖。依赖决定了交易能并行到什么程度，是性能的瓶颈所在。</p></li>
+      <li><b>已有研究</b><p>已有研究大多在状态读写层处理依赖。这种做法通用性强，但缺少应用语义的视角，效果有限，也没有利用区块链应用自身的特征。</p></li>
+      <li><b>我们的做法</b><p>先从价值流通的语义出发，对区块链应用统一建模；再从语义上区分两类依赖：一类不可避免，另一类由系统设计带来，在语义上并不存在。针对后一类依赖做专门的模型设计，并在系统的各个层次利用这些特点做优化。</p></li>
     </ul>
-  </div>
-
-  <h2 class="serif">论文</h2>
-  <ul class="list airy">
-
-    <li>
-      <span class="when mono">在投</span>
-      <div class="body">
-        <p class="t"><span class="venue sub">TKDE</span>FreeFlow: A Low-Dependency Blockchain Model for Value Circulation</p>
-        <p class="m"><strong>马元一</strong> 等 · 2026.09 投稿</p>
-        <p class="d">将链上应用抽象为价值流通模型，逐阶段分析交易依赖的来源，提出面向价值与非价值状态对象的低依赖账本模型，并给出配套编程方法与 DeFi、数据市场示例。</p>
-        <div class="chips"><span class="none">预印本待补</span></div>
-      </div>
-    </li>
-
-    <li>
-      <span class="when mono">2026</span>
-      <div class="body">
-        <p class="t"><span class="venue">FGCS</span>MixChain: An Account-Vessel hybrid model for high-performance blockchain system</p>
-        <p class="m"><strong>YuanYi Ma</strong>, Cheng Qu, He Zhao, Jing Li · Future Generation Computer Systems · SCI 二区</p>
-        <p class="d">提出 Account–Vessel 混合账本模型：用 Vessel 替代 UTXO，通过扩展合约规则模块提升可用性与账户模型兼容性；构建系统原型，设计两阶段共识与交易预处理机制，实现两类交易的高效安全执行。</p>
-        <div class="chips">
-          <a href="https://doi.org/10.1016/j.future.2026.108577" target="_blank" rel="noopener">DOI</a>
-          <span class="none">PDF 待补</span>
-        </div>
-      </div>
-    </li>
-
-    <li>
-      <span class="when mono">2025</span>
-      <div class="body">
-        <p class="t"><span class="venue sub">小型微型计算机系统</span>FusionChain：基于以太坊的 UTXO—Account 混合区块链系统</p>
-        <p class="m"><strong>马元一</strong>, 周桐, 赵赫, 王硕, 李京 · 小型微型计算机系统 2025, 46(2): 396–402</p>
-        <p class="d">面向账户模型访问冲突导致并发受限的问题，在以太坊基础上融合 UTXO 模型，扩展账户与交易结构使区块内 UTXO 交易能够并行执行，并提出账户模型与 UTXO 模型之间的数据转换方法。</p>
-        <div class="chips"><a href="https://doi.org/10.20009/j.cnki.21-1106/TP.2023-0485" target="_blank" rel="noopener">DOI</a></div>
-      </div>
-    </li>
-
-  </ul>
-
-  <h2 class="serif">相关的工程</h2>
-  <ul class="list">
-    <li><span class="when mono">2022–2024</span><div class="body">
-      <p class="t">晶格链 UTXO 模型嵌入</p>
-      <p class="d">在安徽中科晶格实习期间，把 UTXO 模型嵌入其核心技术链，实现 UTXO 交易在 DAG 结构上异步并发执行，系统 TPS 达到 48,000+。</p>
-    </div></li>
-    <li><span class="when mono">2025–2026</span><div class="body">
-      <p class="t">蚂蚁集团底层区块链性能评测体系</p>
-      <p class="d">负责性能评测、瓶颈定位与评测体系建设，并用 AI 把多项测试任务自动化。</p>
-    </div></li>
-  </ul>
+    </div>
+  </section>
+  <section class="sec">
+    <h2>论文</h2>
+    <div>
+    <ul class="list airy">
+    <li id="freeflow" style="scroll-margin-top:24px"><span class="when">在投</span><div class="body"><div class="tags"><span class="venue sub">TKDE</span></div><p class="t">FreeFlow: A Low-Dependency Blockchain Model for Value Circulation</p><p class="m"><strong>马元一</strong> 等 · 2026.09 投稿</p><div class="kv"><b>背景</b><p>交易依赖限制了区块链并行化，现有研究多从系统层状态读写角度分析依赖，忽略了由于状态对象设计不合理（即账本模型存在缺陷）而使得在应用层语义上互不依赖的交易在系统实现中产生依赖的问题。</p></div><div class="kv"><b>工作</b><p>将链上应用抽象为价值流通模型，逐阶段分析交易依赖的来源，提出面向价值与非价值状态对象的低依赖账本模型，并给出配套编程方法与 DeFi、数据市场示例。</p></div><div class="chips"><span class="none">预印本待补</span></div></div></li>
+    <li id="mixchain" style="scroll-margin-top:24px"><span class="when">2026</span><div class="body"><div class="tags"><span class="venue">FGCS</span></div><p class="t">MixChain: An Account-Vessel hybrid model for high-performance blockchain system</p><p class="m"><strong>YuanYi Ma</strong>, Cheng Qu, He Zhao, Jing Li · Future Generation Computer Systems · SCI 二区</p><div class="kv"><b>背景</b><p>在前期工作基础上，使用 Vessel 模型替代 UTXO 模型，充分利用其低依赖特性，提升并发效率。</p></div><div class="kv"><b>工作</b><p>提出 Account–Vessel 混合账本模型：用 Vessel 替代 UTXO，通过扩展合约规则模块提升可用性与账户模型兼容性；构建系统原型，设计两阶段共识与交易预处理机制，实现两类交易的高效安全执行。</p></div><div class="chips"><a href="https://doi.org/10.1016/j.future.2026.108577" target="_blank" rel="noopener">DOI</a><span class="none">PDF 待补</span></div></div></li>
+    <li id="fusionchain" style="scroll-margin-top:24px"><span class="when">2025</span><div class="body"><div class="tags"><span class="venue">小型微型计算机系统</span></div><p class="t">FusionChain：基于以太坊的 UTXO—Account 混合区块链系统</p><p class="m"><strong>马元一</strong>, 周桐, 赵赫, 王硕, 李京 · 小型微型计算机系统 2025, 46(2): 396–402</p><div class="kv"><b>背景</b><p>账户模型在访问冲突时需串行执行，限制并发；UTXO 模型无状态，可大规模并行，但功能性不足。</p></div><div class="kv"><b>工作</b><p>在以太坊基础上融合 UTXO 模型，扩展账户与交易结构使区块内 UTXO 交易能够并行执行，并提出账户模型与 UTXO 模型之间的数据转换方法。</p></div><div class="chips"><a href="https://doi.org/10.20009/j.cnki.21-1106/TP.2023-0485" target="_blank" rel="noopener">DOI</a></div></div></li>
+    </ul>
+    </div>
+  </section>
+  <section class="sec">
+    <h2>相关的工程</h2>
+    <div>
+    <ul class="list">
+    <li><span class="when">2022–2024</span><div class="body"><p class="t"><a href="../experience/index.html#jingge">晶格链 UTXO 模型嵌入</a></p><p class="d">在安徽中科晶格实习期间，把 UTXO 模型嵌入其核心技术链，实现 UTXO 交易在 DAG 结构上异步并发执行，系统 TPS 达到 48,000+。</p></div></li>
+    <li><span class="when">2025–2026</span><div class="body"><p class="t"><a href="../experience/index.html#ant">蚂蚁集团底层区块链测试基线与自动化评测</a></p><p class="d">搭建兼容性与性能两类测试基线，开发发压工具；主导搭建 Agent 自动化评测框架，把环境部署、发压测试、指标监测、异常定位全流程自动化。</p></div></li>
+    </ul>
+    </div>
+  </section>
 
   <footer>
     <span>© 2026 马元一</span>
@@ -96,7 +66,6 @@
 
 </div>
 
-<button id="themeBtn" type="button" aria-label="切换深色模式">◐</button>
 <script src="../assets/theme.js"></script>
 </body>
 </html>

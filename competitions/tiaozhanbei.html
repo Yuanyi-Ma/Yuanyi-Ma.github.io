@@ -10,25 +10,28 @@
 </head>
 <body>
 
-<div class="top">
+<header class="top">
   <div class="top-in">
     <a class="wordmark" href="../index.html">马元一</a>
     <nav>
-      <a href="../products/index.html">产品</a>
+      <a href="../experience/index.html">经历</a>
       <a href="../research/index.html">研究</a>
-      <a href="../about/index.html">关于</a>
+      <a href="../products/index.html">产品</a>
+      <a href="../competitions/index.html" aria-current="page">竞赛</a>
     </nav>
+    <button id="themeBtn" type="button" aria-label="切换深色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor"/></svg></button>
   </div>
-</div>
+</header>
 
 <div class="wrap">
+  <p class="crumb"><a href="index.html">← 本科竞赛</a></p>
   <div class="masthead">
     <h1>「挑战杯」全国大学生课外学术科技作品竞赛</h1>
     <p class="sub">2019 年 11 月 · 第十六届 · 特等奖</p>
   </div>
 
-  <figure class="lead-photo"><img src="../assets/works/ug/tzb/assembly.jpg" alt="装配工作"><figcaption>装配工作</figcaption></figure>
-
+  <div class="lead-grid">
+    <figure class="lead-photo"><img src="../assets/works/ug/tzb/assembly.jpg" alt="装配工作"><figcaption>装配工作</figcaption></figure>
   <ul class="facts">
     <li><b>作品</b><span>《基于低阻复合式气动布局的垂直起降高速飞行平台》</span></li>
     <li><b>成绩</b><span>特等奖（机械与控制类）</span></li>
@@ -37,8 +40,11 @@
     <li><b>我的分工</b><span>核心机构设计、装配、试飞</span></li>
     <li><b>专利</b><span>同一项目申请专利三项，我是发明人之一；两项实用新型已授权</span></li>
   </ul>
+  </div>
 
-  <h2 class="serif">做了什么</h2>
+  <section class="sec">
+    <h2>做了什么</h2>
+    <div>
   <div class="prose">
     <p>2019 年 5 月，项目团队拿到全国赛的参赛名额，之后备赛半年。我是北航参加这届挑战杯年级最小的队员。</p>
     <p>团队一作设计完无人机气动外形后出国，后续的设计、装配、试飞和宣传主要由我和一位同级队友完成。我负责核心机构设计、装配与试飞。其中的包覆式整流机构改了很多轮，早期方案不是太重就是可靠性不够，后来在反复琢磨和请教指导老师之后才定型。</p>
@@ -52,20 +58,33 @@
     </ul>
     <p>获奖后，《北京青年报》头版和《大学生》杂志报道了这个项目，杂志做了封面和专栏采访。</p>
   </div>
+    </div>
+  </section>
 
-  <h2 class="serif">照片</h2>
+
+  <section class="sec">
+    <h2>照片</h2>
+    <div>
   <div class="gallery three">
     <figure><a href="../assets/works/ug/tzb/design.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/tzb/design.jpg" alt="设计工作" loading="lazy"></a><figcaption>设计工作</figcaption></figure>
     <figure><a href="../assets/works/ug/tzb/booth.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/tzb/booth.jpg" alt="挑战杯展台" loading="lazy"></a><figcaption>挑战杯展台</figcaption></figure>
     <figure><a href="../assets/works/ug/tzb/cup.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/tzb/cup.jpg" alt="挑战杯捧杯" loading="lazy"></a><figcaption>挑战杯捧杯</figcaption></figure>
   </div>
+    </div>
+  </section>
 
-  <h2 class="serif">报道</h2>
+
+  <section class="sec">
+    <h2>报道</h2>
+    <div>
   <div class="gallery docs">
     <figure><a href="../assets/works/ug/tzb/bjyouth.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/tzb/bjyouth.jpg" alt="《北京青年报》头版" loading="lazy"></a><figcaption>《北京青年报》头版</figcaption></figure>
     <figure><a href="../assets/works/ug/tzb/campus-cover.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/tzb/campus-cover.jpg" alt="《大学生》杂志封面" loading="lazy"></a><figcaption>《大学生》杂志封面</figcaption></figure>
     <figure><a href="../assets/works/ug/tzb/campus-article.jpg" target="_blank" rel="noopener"><img src="../assets/works/ug/tzb/campus-article.jpg" alt="《大学生》专栏采访「无人机第一课」" loading="lazy"></a><figcaption>《大学生》专栏采访「无人机第一课」</figcaption></figure>
   </div>
+    </div>
+  </section>
+
 
   <nav class="pager">
     <a class="prev" href="../index.html#ug"><span>返回</span>← 本科竞赛</a>
@@ -78,8 +97,6 @@
   </footer>
 
 </div>
-
-<button id="themeBtn" type="button" aria-label="切换深色模式">◐</button>
 <script src="../assets/theme.js"></script>
 </body>
 </html>

@@ -10,95 +10,122 @@
 </head>
 <body>
 
-<div class="top">
+<header class="top">
   <div class="top-in">
     <a class="wordmark" href="index.html">马元一</a>
     <nav>
-      <a href="products/index.html">产品</a>
+      <a href="experience/index.html">经历</a>
       <a href="research/index.html">研究</a>
-      <a href="about/index.html">关于</a>
+      <a href="products/index.html">产品</a>
+      <a href="competitions/index.html">竞赛</a>
     </nav>
+    <button id="themeBtn" type="button" aria-label="切换深色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor"/></svg></button>
   </div>
-</div>
+</header>
 
 <div class="wrap">
-
   <div class="hero">
     <div class="portrait"><img src="assets/avatar.jpg" alt="马元一"></div>
     <div class="say">
-      <p>我是马元一（Yuanyi Ma）。</p>
-      <p>中国科学技术大学计算机科学与技术 PhD 在读，本科是机械工程。</p>
-      <p><a href="research/index.html">研究方向</a>是区块链系统的并发执行与账本模型，已发表两篇，一篇在投 TKDE。</p>
-      <p>读博之外<a href="products/index.html">做 AI 产品</a>，做过织忆 Memloom、玩点真的、探月方舟 Moonfall、ProofMarket 等。</p>
-      <div class="linkrow">
-        <a href="mailto:mayuanyi@mail.ustc.edu.cn">Email</a><span class="sep">/</span><a href="https://github.com/Yuanyi-Ma" target="_blank" rel="noopener">GitHub</a><span class="sep">/</span><a href="about/index.html">关于我</a>
+      <h1>马元一<span class="en">Yuanyi Ma</span></h1>
+      <p class="id">中国科学技术大学 · 计算机科学与技术 PhD 在读</p>
+      <p>研究领域是高性能区块链系统，已发表两篇论文，一篇在投 TKDE。有蚂蚁集团、中科晶格两段相关实习经历。</p>
+      <p>参加过多场黑客松，在多个比赛中获奖。</p>
+      <p>本科在北京航空航天大学读机械工程，参加过航模队、机器人竞赛和挑战杯。</p>
+      <div class="btnrow">
+        <a class="btn" href="mailto:mayuanyi@mail.ustc.edu.cn">mayuanyi@mail.ustc.edu.cn</a>
+        <a class="btn" href="https://github.com/Yuanyi-Ma" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
     </div>
   </div>
-
-  <h2 class="serif">最近</h2>
-  <ul class="list plain">
-    <li><span class="when mono">2026.09</span><div class="body"><p class="t">FreeFlow 投了 TKDE。</p></div></li>
-    <li><span class="when mono">2026.07</span><div class="body"><p class="t">《探月方舟 Moonfall》拿了探月计划具身智能黑客松 Agent 赛道亚军，在世界机器人大会展示。</p></div></li>
-    <li><span class="when mono">2026.06</span><div class="body"><p class="t">ProofMarket 拿了 AI + Web3 黑客松亚军。</p></div></li>
-    <li><span class="when mono">2026.04</span><div class="body"><p class="t">结束在蚂蚁集团底层区块链团队的实习。</p></div></li>
-    <li><span class="when mono">2026.03</span><div class="body"><p class="t">织忆 Memloom 在腾讯云上海城市峰会做了一次主题分享。</p></div></li>
-  </ul>
-
-  <h2 class="serif">产品</h2>
-  <ul class="list">
-    <li><span class="when mono">2026.03</span><div class="body">
-      <p class="t"><a href="products/memloom.html">织忆 Memloom</a></p>
-      <p class="d">人和自己 AI 之间的知识治理层：AI 找候选、人判价值</p>
-    </div></li>
-    <li><span class="when mono">2026.07</span><div class="body">
-      <p class="t"><a href="products/play-the-room.html">玩点真的</a></p>
-      <p class="d">拍下现场 → 当场生成一局线下游戏并由 AI 主持</p>
-    </div></li>
-    <li><span class="when mono">2026.07</span><div class="body">
-      <p class="t"><a href="products/ark.html">探月方舟 Moonfall</a></p>
-      <p class="d">让创作者带自己的 AI 做“桌面会自己动”的桌游的通用框架</p>
-    </div></li>
-    <li><span class="when mono">2026.06</span><div class="body">
-      <p class="t"><a href="products/proofmarket.html">ProofMarket</a></p>
-      <p class="d">Agent 间不可信协作的可验证、可挑战、可结算协议</p>
-    </div></li>
-  </ul>
-  <p style="font-size:14.5px;color:var(--ink-3);margin-top:14px"><a href="products/index.html">全部产品 →</a></p>
-
-  <h2 class="serif">研究</h2>
-  <ul class="list">
-    <li><span class="when mono">2026</span><div class="body">
-      <p class="t"><span class="venue sub">TKDE 在投</span>FreeFlow: A Low-Dependency Blockchain Model for Value Circulation</p>
-    </div></li>
-    <li><span class="when mono">2026</span><div class="body">
-      <p class="t"><span class="venue">FGCS</span><a href="https://doi.org/10.1016/j.future.2026.108577" target="_blank" rel="noopener">MixChain: An Account-Vessel hybrid model for high-performance blockchain system</a></p>
-    </div></li>
-    <li><span class="when mono">2025</span><div class="body">
-      <p class="t"><span class="venue sub">小型微型计算机系统</span><a href="https://doi.org/10.20009/j.cnki.21-1106/TP.2023-0485" target="_blank" rel="noopener">FusionChain：基于以太坊的 UTXO—Account 混合区块链系统</a></p>
-    </div></li>
-  </ul>
-  <p style="font-size:14.5px;color:var(--ink-3);margin-top:14px"><a href="research/index.html">研究方向与论文 →</a></p>
-
-  <h2 class="serif" id="ug">本科竞赛</h2>
-  <ul class="list">
-    <li><span class="when mono">2019.11</span><div class="body">
-      <p class="t"><a href="competitions/tiaozhanbei.html">「挑战杯」全国大学生课外学术科技作品竞赛（第十六届）</a><span class="mark">特等奖</span></p>
-      <p class="d">《基于低阻复合式气动布局的垂直起降高速飞行平台》，我负责核心机构设计、装配与试飞。项目申请专利三项，其中两项实用新型已授权。</p>
-    </div></li>
-    <li><span class="when mono">2019.10</span><div class="body">
-      <p class="t"><a href="competitions/fengru.html">无人机续航时间世界纪录</a></p>
-      <p class="d">北航“冯如三号”项目组，我负责总体协调和飞机装配。国际航空联合会认证，U-1 级 25–100 公斤油动固定翼无人机，续航 30 小时 06 分 42 秒。</p>
-    </div></li>
-    <li><span class="when mono">2019.05</span><div class="body">
-      <p class="t"><a href="competitions/robot.html">中国高校智能机器人创意大赛（第二届）</a><span class="mark">一等奖</span></p>
-      <p class="d">任领队，负责编程。看出这类比赛各队硬件差不多、胜负取决于轮子的摩擦力，专门定制了高摩擦力轮子。</p>
-    </div></li>
-    <li><span class="when mono">2018.09</span><div class="body">
-      <p class="t"><a href="competitions/cadc.html">中国国际飞行器设计挑战赛 · 限时载运空投</a><span class="mark">一等奖 · 单项团体第一名</span></p>
-      <p class="d">北航航模队，我负责动力系统。</p>
-    </div></li>
-  </ul>
+  <section class="sec">
+    <h2>最近</h2>
+    <div>
+    <ul class="list plain">
+    <li><span class="when">2026.09</span><div class="body"><p class="t">织忆 Memloom 拿了中科大“一〇七杯”算力与智能体开发大赛一等奖。</p></div></li>
+    <li><span class="when">2026.09</span><div class="body"><p class="t">FreeFlow 投了 TKDE。</p></div></li>
+    <li><span class="when">2026.07</span><div class="body"><p class="t">《探月方舟 Moonfall》拿了探月计划具身智能黑客松 Agent 赛道亚军，在世界机器人大会展示。</p></div></li>
+    <li><span class="when">2026.06</span><div class="body"><p class="t">ProofMarket 拿了 AI + Web3 黑客松亚军。</p></div></li>
+    <li><span class="when">2026.04</span><div class="body"><p class="t">结束在蚂蚁集团底层区块链团队的实习。</p></div></li>
+    <li><span class="when">2026.03</span><div class="body"><p class="t">织忆 Memloom 在腾讯云上海城市峰会做了一次主题分享。</p></div></li>
+    </ul>
+    </div>
+  </section>
+  <section class="sec">
+    <h2>教育</h2>
+    <div>
+    <ul class="list wide">
+    <li><span class="when">2021 – 至今</span><div class="body"><p class="t">中国科学技术大学 · 计算机科学与技术，PhD</p><p class="d">GPA 3.74 / 4.30。高级数据库系统 93、组合数学 93、高级算法设计 93。学业一等奖学金。</p></div></li>
+    <li><span class="when">2017 – 2021</span><div class="body"><p class="t">北京航空航天大学—北京工业大学双培计划 · 机械工程，本科</p><p class="d">前三年在北航访学，考核标准与本校生一致。综合成绩 90.7，专业排名 1/30。北京市优秀毕业生。</p></div></li>
+    </ul>
+    </div>
+  </section>
+  <section class="sec">
+    <h2>经历</h2>
+    <div>
+    <ul class="list wide">
+    <li><span class="when">2025.10 – 2026.04</span><div class="body"><p class="t"><a href="experience/index.html#ant">蚂蚁集团 · 区块链开发工程师（实习）</a></p><p class="d">搭建兼容性与性能两类测试基线，开发发压工具；主导搭建 Agent 自动化评测框架。</p></div></li>
+    <li><span class="when">2022.10 – 2024.04</span><div class="body"><p class="t"><a href="experience/index.html#jingge">安徽中科晶格 · 科研型实习生 / 产品经理实习生</a></p><p class="d">在晶格链中嵌入 UTXO 模型；主导跨链服务平台从 0 到 1 的技术选型、需求梳理和产品设计。</p></div></li>
+    </ul>
+    <p class="more"><a href="experience/index.html">经历详情 →</a></p>
+    </div>
+  </section>
+  <section class="sec">
+    <h2>研究</h2>
+    <div>
+    <p style="font-size:17px;line-height:1.9;margin:0 0 28px;max-width:42em">区块链要求每个节点执行相同的交易，交易之间的依赖限制了并行，是性能的瓶颈。我们从价值流通的语义出发分析依赖，据此设计账本模型和各层机制。</p>
+    <ul class="list" style="border-top:1px solid var(--rule);padding-top:16px">
+    <li><span class="when">2026</span><div class="body"><div class="tags"><span class="venue sub">TKDE 在投</span></div><p class="t"><a href="research/index.html#freeflow">FreeFlow: A Low-Dependency Blockchain Model for Value Circulation</a></p><p class="d ink">把链上应用抽象成「价值流通」，逐阶段分析依赖的来源，据此给出低依赖的账本模型和配套编程方法。</p></div></li>
+    <li><span class="when">2026</span><div class="body"><div class="tags"><span class="venue">FGCS</span></div><p class="t"><a href="research/index.html#mixchain">MixChain: An Account-Vessel hybrid model for high-performance blockchain system</a></p><p class="d ink">用 Vessel 替代 UTXO，再配一套两阶段共识和交易预处理机制，让两类交易能在同一条链上安全高效地共存。</p></div></li>
+    <li><span class="when">2025</span><div class="body"><div class="tags"><span class="venue">小型微型计算机系统</span></div><p class="t"><a href="research/index.html#fusionchain">FusionChain：基于以太坊的 UTXO—Account 混合区块链系统</a></p><p class="d ink">在以太坊上融合 UTXO 模型，让区块内的 UTXO 交易可以并行执行。</p></div></li>
+    </ul>
+    <p class="more"><a href="research/index.html">研究方向与论文 →</a></p>
+    </div>
+  </section>
+  <section class="sec">
+    <h2>产品</h2>
+    <div>
+    <div class="cards">
+      <div class="card">
+        <a class="shot" href="products/ark.html"><img src="assets/works/moonfall/p-01.jpg" alt="探月方舟 Moonfall" loading="lazy"></a>
+        <div class="head"><h3><a href="products/ark.html">探月方舟 Moonfall</a></h3><span class="when">2026.07</span></div>
+        <p class="one">让创作者带自己的 AI 做“桌面会自己动”的桌游的通用框架</p>
+        <p class="award">2026.07 · 探月计划具身智能黑客松 Agent 赛道 · 亚军</p>
+      </div>
+      <div class="card">
+        <a class="shot" href="products/memloom.html"><img src="assets/works/memloom/cover.png" alt="织忆 Memloom" loading="lazy"></a>
+        <div class="head"><h3><a href="products/memloom.html">织忆 Memloom</a></h3><span class="when">2026.03</span></div>
+        <p class="one">人和自己 AI 之间的知识治理层：AI 找候选、人判价值</p>
+        <p class="award">2026.09 · 中科大“一〇七杯”算力与智能体开发大赛 · 一等奖</p>
+      </div>
+      <div class="card">
+        <a class="shot top-crop" href="products/play-the-room.html"><img src="assets/works/play-the-room/p-1.jpg" alt="玩点真的" loading="lazy"></a>
+        <div class="head"><h3><a href="products/play-the-room.html">玩点真的</a></h3><span class="when">2026.07</span></div>
+        <p class="one">拍下现场 → 当场生成一局线下游戏并由 AI 主持</p>
+        <p class="award">2026.07 · 抖音黑客松大区赛 · 选手内投第一名</p>
+      </div>
+      <div class="card">
+        <a class="shot" href="products/proofmarket.html"><img src="assets/works/proofmarket/p-01.jpg" alt="ProofMarket" loading="lazy"></a>
+        <div class="head"><h3><a href="products/proofmarket.html">ProofMarket</a></h3><span class="when">2026.06</span></div>
+        <p class="one">Agent 间不可信协作的可验证、可挑战、可结算协议</p>
+        <p class="award">2026.06 · AI + Web3 黑客松 · 亚军</p>
+      </div>
+    </div>
+    <p class="more"><a href="products/index.html">全部产品 →</a></p>
+    </div>
+  </section>
+  <section class="sec" id="ug">
+    <h2>本科竞赛</h2>
+    <div>
+    <ul class="list tight">
+    <li><span class="when">2019.11</span><div class="body"><div class="trow"><p class="t"><a href="competitions/tiaozhanbei.html">「挑战杯」全国大学生课外学术科技作品竞赛（第十六届）</a></p><span class="mark">机械与控制类特等奖</span></div></div></li>
+    <li><span class="when">2019.10</span><div class="body"><p class="t"><a href="competitions/fengru.html">无人机续航时间世界纪录</a></p></div></li>
+    <li><span class="when">2019.05</span><div class="body"><div class="trow"><p class="t"><a href="competitions/robot.html">中国高校智能机器人创意大赛（第二届）</a></p><span class="mark">一等奖</span></div></div></li>
+    <li><span class="when">2018.09</span><div class="body"><div class="trow"><p class="t"><a href="competitions/cadc.html">中国国际飞行器设计挑战赛 · 限时载运空投</a></p><span class="mark">一等奖</span><span class="mark">单项团体第一名</span></div></div></li>
+    </ul>
+    <p class="more"><a href="competitions/index.html">本科竞赛详情 →</a></p>
+    </div>
+  </section>
 
   <footer>
     <span>© 2026 马元一</span>
@@ -107,7 +134,6 @@
 
 </div>
 
-<button id="themeBtn" type="button" aria-label="切换深色模式">◐</button>
 <script src="assets/theme.js"></script>
 </body>
 </html>

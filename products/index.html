@@ -4,107 +4,85 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>产品 · 马元一</title>
-<meta name="description" content="马元一做的 AI 产品：织忆 Memloom、玩点真的、探月方舟 Moonfall、ProofMarket 等。">
+<meta name="description" content="马元一做的 AI 产品：探月方舟 Moonfall、织忆 Memloom、玩点真的、ProofMarket 等。">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.92em' font-size='92' font-family='Georgia,serif'>马</text></svg>">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
-<div class="top">
+<header class="top">
   <div class="top-in">
     <a class="wordmark" href="../index.html">马元一</a>
     <nav>
-      <a href="index.html" aria-current="page">产品</a>
+      <a href="../experience/index.html">经历</a>
       <a href="../research/index.html">研究</a>
-      <a href="../about/index.html">关于</a>
+      <a href="../products/index.html" aria-current="page">产品</a>
+      <a href="../competitions/index.html">竞赛</a>
     </nav>
+    <button id="themeBtn" type="button" aria-label="切换深色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor"/></svg></button>
   </div>
-</div>
+</header>
 
 <div class="wrap">
-
   <div class="masthead">
     <h1>产品</h1>
   </div>
-
   <ul class="entries">
-
-    <li>
-      <a class="shot" href="memloom.html"><img src="../assets/works/memloom/p-01.jpg" alt="织忆 Memloom" loading="lazy"></a>
-      <div>
-        <h3><a href="memloom.html">织忆 Memloom</a></h3>
-        <p class="one">人和自己 AI 之间的知识治理层：AI 找候选、人判价值</p>
-        <p class="note">人和自己 AI 之间的双向知识层。AI 从日常对话流里抽取候选知识，人做价值判断（人审门）；每条经确认的知识同时产出「人用版」（机制、边界、例子）和「Agent 用版」（规则、约束、调用条件），两版不漂移。</p>
-        <p class="meta">桌面端 381 项测试（372 通过）；三代产品、两轮访谈。</p>
-        <div class="chips">
-          <a href="https://www.bilibili.com/video/BV18ktf6dER2/" target="_blank" rel="noopener">Demo 视频</a>
-          <a href="https://github.com/Yuanyi-Ma/Zhi-Yi" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://xhslink.cn/o/912Wv43uokv" target="_blank" rel="noopener">峰会分享记录</a>
-        </div>
-      </div>
-    </li>
-
-    <li>
-      <a class="shot" href="play-the-room.html"><img src="../assets/works/play-the-room/p-1.jpg" alt="玩点真的" loading="lazy"></a>
-      <div>
-        <h3><a href="play-the-room.html">玩点真的</a></h3>
-        <p class="one">拍下现场 → 当场生成一局线下游戏并由 AI 主持</p>
-        <p class="note">拍下眼前的空间和物品，补充人数、关系、时长，系统生成一局立刻能开的线下游戏；复杂玩法由 AI 用语音、计时、阶段提示主持。痛点在于现成游戏不适合当下的人数、道具和时间，最后大家坐在同一张桌子旁各自看手机。</p>
-        <p class="meta">上线服务 + 三个入口；49 个历史游戏；214 个评测 run；召回 0.62→0.88。</p>
-        <div class="chips">
-          <a href="play-the-room.html">产品说明</a>
-          <a href="https://www.bilibili.com/video/BV1gBte6pEuK" target="_blank" rel="noopener">Demo 视频</a>
-          <a href="https://github.com/Yuanyi-Ma/play-the-room" target="_blank" rel="noopener">GitHub</a>
-          <span class="none">线上入口待确认</span>
-        </div>
-      </div>
-    </li>
-
     <li>
       <a class="shot" href="ark.html"><img src="../assets/works/moonfall/p-01.jpg" alt="探月方舟 Moonfall" loading="lazy"></a>
       <div>
-        <h3><a href="ark.html">探月方舟 Moonfall</a></h3>
+        <h2><a href="ark.html">探月方舟 Moonfall</a></h2>
         <p class="one">让创作者带自己的 AI 做“桌面会自己动”的桌游的通用框架</p>
-        <p class="note">把 Agent 注入实体桌游，再把桌游抽象为一套通用框架：小车、机械臂、视觉定位、多 Agent 决策封在引擎里，创作者带自己的 AI 只写一份游戏定义文件，就能做出一款“桌面自己会动”的桌游；同一份定义换一份绑定档案还能跑成纯软件版。</p>
+        <span class="mark">2026.07 · 探月计划具身智能黑客松 Agent 赛道 · 亚军</span>
+        <p class="note">为桌游中的 NPC 与玩家分身注入 Agent，使其能够感知局势、理解玩家意图并自主决定下一步；再由轮式机器人、机械臂把这些决策变成桌面上的真实行动，改变地形、资源和游戏局势。</p>
         <p class="meta">SDK 113 项单元测试、6 种能力契约、13 个消息 topic、新设备 3 分钟接入。</p>
-        <div class="chips">
-          <a href="https://www.bilibili.com/video/BV1evtf6hEaW/" target="_blank" rel="noopener">Demo 视频</a>
-          <span class="none">代码暂不公开</span>
-        </div>
+        <div class="chips"><a class="in" href="ark.html">产品说明 →</a><a href="https://www.bilibili.com/video/BV1evtf6hEaW/" target="_blank" rel="noopener">Demo 视频</a><span class="none">代码暂不公开</span></div>
       </div>
     </li>
-
+    <li>
+      <a class="shot" href="memloom.html"><img src="../assets/works/memloom/cover.png" alt="织忆 Memloom" loading="lazy"></a>
+      <div>
+        <h2><a href="memloom.html">织忆 Memloom</a></h2>
+        <p class="one">人和自己 AI 之间的知识治理层：AI 找候选、人判价值</p>
+        <span class="mark">2026.09 · 中科大“一〇七杯”算力与智能体开发大赛 · 一等奖</span>
+        <p class="note">人和自己 AI 之间的双向知识层。AI 从日常对话流里抽取候选知识，人做价值判断（人审门）；每条经确认的知识同时产出「人用版」（机制、边界、例子）和「Agent 用版」（规则、约束、调用条件），两版不漂移。</p>
+        <p class="meta">桌面端 381 项测试（372 通过）；三代产品、两轮访谈。</p>
+        <div class="chips"><a class="in" href="memloom.html">产品说明 →</a><a href="https://www.bilibili.com/video/BV18ktf6dER2/" target="_blank" rel="noopener">Demo 视频</a><a href="https://github.com/Yuanyi-Ma/Zhi-Yi" target="_blank" rel="noopener">GitHub</a><a href="https://xhslink.cn/o/912Wv43uokv" target="_blank" rel="noopener">峰会分享记录</a></div>
+      </div>
+    </li>
+    <li>
+      <a class="shot top-crop" href="play-the-room.html"><img src="../assets/works/play-the-room/p-1.jpg" alt="玩点真的" loading="lazy"></a>
+      <div>
+        <h2><a href="play-the-room.html">玩点真的</a></h2>
+        <p class="one">拍下现场 → 当场生成一局线下游戏并由 AI 主持</p>
+        <span class="mark">2026.07 · 抖音黑客松大区赛 · 选手内投第一名</span>
+        <p class="note">拍下眼前的空间和物品，补充人数、关系、时长，系统生成一局立刻能开的线下游戏；复杂玩法由 AI 用语音、计时、阶段提示主持。痛点在于现成游戏不适合当下的人数、道具和时间，最后大家坐在同一张桌子旁各自看手机。</p>
+        <p class="meta">上线服务 + 三个入口；49 个历史游戏；214 个评测 run；召回 0.62→0.88。</p>
+        <div class="chips"><a class="in" href="play-the-room.html">产品说明 →</a><a href="https://www.bilibili.com/video/BV1gBte6pEuK" target="_blank" rel="noopener">Demo 视频</a><a href="https://github.com/Yuanyi-Ma/play-the-room" target="_blank" rel="noopener">GitHub</a><span class="none">线上入口待确认</span></div>
+      </div>
+    </li>
     <li>
       <a class="shot" href="proofmarket.html"><img src="../assets/works/proofmarket/p-01.jpg" alt="ProofMarket" loading="lazy"></a>
       <div>
-        <h3><a href="proofmarket.html">ProofMarket</a></h3>
+        <h2><a href="proofmarket.html">ProofMarket</a></h2>
         <p class="one">Agent 间不可信协作的可验证、可挑战、可结算协议</p>
+        <span class="mark">2026.06 · AI + Web3 黑客松 · 亚军</span>
         <p class="note">AI Agent 的可信专业资料网络：用户侧 Agent 在授权预算内，付费委托持有订阅资料库授权的“领域专家 Agent”，拿回一份可验证、可挑战、可结算的研究简报——每条结论落到具体来源的具体段落。它是 Agent 工作流中的一层基础设施。</p>
         <p class="meta">13 份编号设计文档；5 份合约 + 约 20 个测试文件；Sepolia 与 Injective 双链部署。</p>
-        <div class="chips">
-          <a href="https://www.bilibili.com/video/BV1evtf6hEBg/" target="_blank" rel="noopener">Demo 视频</a>
-          <a href="https://github.com/Yuanyi-Ma/Proofmarket" target="_blank" rel="noopener">GitHub</a>
-        </div>
+        <div class="chips"><a class="in" href="proofmarket.html">产品说明 →</a><a href="https://www.bilibili.com/video/BV1evtf6hEBg/" target="_blank" rel="noopener">Demo 视频</a><a href="https://github.com/Yuanyi-Ma/Proofmarket" target="_blank" rel="noopener">GitHub</a></div>
       </div>
     </li>
-
   </ul>
-
-  <h2 class="serif">其他</h2>
-  <ul class="list airy">
-    <li><span class="when mono">进行中</span><div class="body">
-      <p class="t">万象记</p>
-      <p class="d">面向个人通用 Agent 的记录系统。图片、文字、语音、文件随手发给 AI，AI 判断这些内容该进哪个小程序、最少追问补齐必要信息，最后结构化沉淀到本地。</p>
-    </div></li>
-    <li><span class="when mono">2026.07</span><div class="body">
-      <p class="t">SCIYard</p>
-      <p class="d">Agent 驱动的论文评论网络。读论文时，AI 同时读取这篇论文的公开评论和你的本地记忆；你在阅读中形成的判断存成本地评论，确认后可用稳定化名发布。</p>
-    </div></li>
-    <li><span class="when mono">2026.06</span><div class="body">
-      <p class="t">LookCare</p>
-      <p class="d">形象管理的一站式管家。拍脸和拍体态两张照片，AI 基于一个经过策展的知识库给出皮肤方案、体态修复方案，最后整合成一份「今天该做什么」的日计划。</p>
-    </div></li>
-  </ul>
+  <section class="sec">
+    <h2>其他</h2>
+    <div>
+    <ul class="list">
+    <li><span class="when">进行中</span><div class="body"><p class="t">万象记</p><p class="d">面向个人通用 Agent 的记录系统。图片、文字、语音、文件随手发给 AI，AI 判断这些内容该进哪个小程序、最少追问补齐必要信息，最后结构化沉淀到本地。</p></div></li>
+    <li><span class="when">2026.07</span><div class="body"><p class="t">SCIYard</p><p class="d">Agent 驱动的论文评论网络。读论文时，AI 同时读取这篇论文的公开评论和你的本地记忆；你在阅读中形成的判断存成本地评论，确认后可用稳定化名发布。</p></div></li>
+    <li><span class="when">2026.06</span><div class="body"><p class="t">LookCare</p><p class="d">形象管理的一站式管家。拍脸和拍体态两张照片，AI 基于一个经过策展的知识库给出皮肤方案、体态修复方案，最后整合成一份「今天该做什么」的日计划。</p></div></li>
+    </ul>
+    </div>
+  </section>
 
   <footer>
     <span>© 2026 马元一</span>
@@ -113,7 +91,6 @@
 
 </div>
 
-<button id="themeBtn" type="button" aria-label="切换深色模式">◐</button>
 <script src="../assets/theme.js"></script>
 </body>
 </html>
