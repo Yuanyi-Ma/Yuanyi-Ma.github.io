@@ -219,13 +219,48 @@
       .ui-strip,.arch-canvas{break-inside:avoid}
       .arch-toolbar{break-after:avoid}
     }
+
+    /* ===== 个人网站加的适配（2026-09-21）：原稿只按电脑宽度排版，下面只在窄屏生效，桌面版式不变 ===== */
+    .topbar-right{display:flex;align-items:center;gap:22px}
+    .site-back{color:#cfd0c8;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:1px}
+    .site-back:hover{color:var(--yellow);border-color:var(--yellow)}
+    @media (max-width:1180px){
+      body{min-width:0}
+    }
+    @media (max-width:760px){
+      :root{--t1:40px;--t2:30px;--t3:22px;--t4:18px;--t5:16px;--t6:15px;--gap-col:20px;--pad-sec:56px}
+      .shell{width:calc(100% - 36px)}
+      .media-shell{width:calc(100% - 24px)}
+      .doc-meta{display:none}
+      .hero{display:block;min-height:0;padding:36px 0 32px}
+      .hero-logo{width:min(300px,86%)}
+      .screen-stage{min-height:0;display:flex;justify-content:center;gap:14px;margin-top:34px}
+      .screen{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:44%;max-width:200px;border-width:5px;border-radius:26px}
+      .hero-stamp{right:0;top:-14px}
+      .hero-stamp strong{font-size:26px}
+      .proof-line{grid-template-columns:1fr;width:calc(100% - 36px)}
+      .proof-item{padding:18px 4px}
+      .proof-item+.proof-item{border-left:0;border-top:1px solid var(--line)}
+      .section-head,.interface-head,.arch-intro{grid-template-columns:1fr;gap:14px;align-items:start}
+      .interface-head{margin:48px 0 20px;padding-top:48px}
+      .audience,.pains,.path-grid,.flow,.types,.arch-reading{grid-template-columns:1fr}
+      .audience-row span{white-space:normal}
+      .step:after,.arch-reading div+div:before{display:none}
+      .ui-strip{grid-template-columns:1fr 1fr;padding:18px;gap:16px}
+      #universeFrame{height:760px}
+      .interaction-note{display:block}
+      .interaction-note span{display:block;margin-top:6px}
+      .path:after{font-size:110px}
+      .lightbox img{width:1400px}
+      .lightbox-close{right:14px;top:14px}
+    }
   </style>
 </head>
 <body>
   <header class="topbar">
     <div class="shell topbar-inner">
       <div class="brand"><span class="brand-mark">真</span><span>玩点真的</span></div>
-      <div class="doc-meta">产品说明 · 电脑浏览器版 · 2026</div>
+      <div class="topbar-right"><a class="site-back" href="index.html">← 马元一 · 全部产品</a><span class="doc-meta">产品说明 · 电脑浏览器版 · 2026</span></div>
     </div>
   </header>
 
@@ -256,7 +291,7 @@
       <div class="shell">
         <p class="kicker">用户与问题</p>
         <h2>人已经聚在一起，<br>游戏却没有开始。</h2>
-        <p class="lede">问题通常不是没有游戏，而是现成游戏不适合这一刻：人数不对、道具不齐、时间不够，也没有人愿意承担组织失败的尴尬。</p>
+        <p class="lede">问题通常出在现成游戏不适合这一刻：人数不对、道具不齐、时间不够，也没有人愿意承担组织失败的尴尬。</p>
         <div class="problem-grid">
           <div class="problem-block">
             <h3>它服务谁</h3>
@@ -333,7 +368,7 @@
             <h2>系统如何把现场<br>变成可玩的规则。</h2>
           </div>
           <div>
-            <p class="lede">这张图描述的是完整系统，而不是一次模型调用：多条入口先形成统一任务，再经过规则注入、差异化生成、评价、安全校验和运行工具，最后把真实反馈沉淀回规则库。</p>
+            <p class="lede">这张图描述的是完整系统：多条入口先形成统一任务，再经过规则注入、差异化生成、评价、安全校验和运行工具，最后把真实反馈沉淀回规则库。</p>
           </div>
         </div>
 
