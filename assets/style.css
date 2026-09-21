@@ -173,3 +173,16 @@ footer a{color:var(--ink-3)}
 /* 作品集页面铺开 */
 .deck{margin:26px 0 10px}
 .deck img{display:block; width:100%; height:auto; border:1px solid var(--rule); margin-bottom:14px; background:#fff}
+
+/* ── 本科竞赛详情 ─────────────────────── */
+.facts{margin:26px 0 8px; padding:0; list-style:none; border-top:1px solid var(--rule)}
+.facts li{display:grid; grid-template-columns:104px 1fr; gap:20px; padding:9px 0; border-bottom:1px solid var(--rule); font-size:15px; color:var(--ink-2)}
+.facts li b{font-weight:normal; color:var(--ink-3); font-size:14px}
+@media(max-width:620px){ .facts li{grid-template-columns:1fr; gap:0} }
+.gallery{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:22px 0 8px}
+.gallery figure{margin:0}
+.gallery figure.full{grid-column:1 / -1}
+.gallery img{display:block; width:100%; height:auto; border:1px solid var(--rule); background:var(--bg-2)}
+.gallery figcaption{font-size:13px; color:var(--ink-3); margin-top:6px; line-height:1.6}
+@media(max-width:620px){ .gallery{grid-template-columns:1fr} }
+.backline{font-size:14.5px; color:var(--ink-3); margin-top:40px}
